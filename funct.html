@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const items = {
+            food:1000,
+            drinks:2000,
+        };
+
+        var cart = 0;
+
+
+
+       /* function addToCart() {
+            cart += items.food;
+        }
+        addToCart();
+        addToCart();
+
+        console.log("cart", cart); */
+
+
+
+
+
+      /*  function addToCart(price){
+            cart +=price;
+        }
+        addToCart(items.food);
+        addToCart(items.drinks);
+        console.log("cart" ,cart);*/
+
+       function addCartValue(price) {
+           return cart + price ;
+       }
+       
+       function addToCart(price){
+           cart = addCartValue(price);
+       }
+       addToCart(items.food);
+       console.log("Cart", cart);
+
+</script>
+</body>
+</html>

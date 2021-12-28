@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+  
+</head>
+<body>
+    <script>
+
+         /*   this
+              Current executing object
+              Environment -> parent object
+              Browser  -> Window
+              Pc   ->  {}
+
+
+     
+
+
+        // console.log(this);          O/P  no value is there so it goes to parent object -window
+
+
+       /* function getThis(){
+           console.log(this);          O/P  no value is there so it goes to parent object -window
+        }
+        getThis(); */
+
+    
+        const OurObject = {
+    
+            name : "Mani",               // value is given 
+    
+            myFunct: function () {
+              
+                console.log(this);
+                
+            },        
+    
+        };
+
+           OurObject.myFunct();    // current executing object
+    
+        </script>
+</body>
+</html>
